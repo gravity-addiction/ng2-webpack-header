@@ -11,12 +11,16 @@ import { routing } from './app.routing';
 
 import { removeNgStyles, createNewHosts } from '@angularclass/hmr';
 
+import { HeadersModule } from './headers/headers-module';
+
 @NgModule({
   imports: [
     BrowserModule,
     HttpModule,
     FormsModule,
-    routing
+    routing,
+
+    HeadersModule
   ],
   declarations: [
     AppComponent,
